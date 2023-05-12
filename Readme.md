@@ -34,4 +34,8 @@
 
 
 ## Installation of TypeScript 
-- Typescript global installation : ```npm install -g typescript ```
+- ##### Must have Node js installed in your machine. 
+- ##### Typescript compiler global installation : ```$ npm install   -g typescript ```
+- ##### It gives us a command : ``` tsc ```
+- ##### By using this command we can access  typescript compiler. 
+
