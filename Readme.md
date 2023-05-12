@@ -1,1 +1,1 @@
-# Typescript Documentation:- 
+# <span color="blue"> Typescript Documentation </span> 
