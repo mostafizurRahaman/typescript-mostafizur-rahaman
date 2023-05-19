@@ -171,10 +171,10 @@ myName = null; // because the type is null ;
 #### Number Type : only allows the number type values, other values give error.
 
 ```typescript
-  let age: number; 
+  let age: number;
   age = 20;
   age = 50;
-  age = NaN; 
+  age = NaN;
 
   //shows Errors for :
   age = "20" // because the type is string;
@@ -205,15 +205,23 @@ a = undefined;
 a = "undefined"; // because "undefined" is string ;
 ```
 
-```typescript 
-   let user : null; 
-   user = null // correct value; 
+```typescript
+let user: null;
+user = null; // correct value;
 
-   // Shows error for: 
-   user = "Ratul Hossain" // because type is string
-   user = {name: "Ratul Hossain"} // because type is object 
-   user = 20 // because  type is number 
-   user = undefined // because type is number; 
+// Shows error for:
+user = "Ratul Hossain"; // because type is string
+user = { name: "Ratul Hossain" }; // because type is object
+user = 20; // because  type is number
+user = undefined; // because type is number;
 ```
 
 ---
+
+```typescript
+const user = {
+   name: "Hridoy hossain",
+   email: "hridoyhossain@gmail.com",
+   phone: "01304015167",
+};
+```
