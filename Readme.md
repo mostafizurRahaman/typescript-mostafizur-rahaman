@@ -69,7 +69,8 @@ console.log(a);
 - ##### After running the command we can see an `tsconfig.json` file
 - ##### open `tsconfig.json` and edit properties values like below: 
 ```json 
-{
+{  
+   "target": "es2015", // specify javaScript version  
    "rootDir": "/src",   /* Specify the root folder within your source files. */
    "OutDir" : "/dist",        /* Specify an output folder for all emitted files. */
 }
@@ -87,3 +88,17 @@ console.log(a);
    var myName = "Mostafizur Rahaman"; 
    console.log(myName); 
 ```
+____
+## How to Define a Type of a variable ? 
+- ##### We can use colon after variable to define a type of variable in typescript 
+## syntax- 
+```typescript
+   const VariableName : type = value; 
+   // example
+   const language : string = "TypeScript"; 
+   const prevLang : string = "JavaScript"; 
+   let age : number = 20; 
+   let isMarried : boolean = false ; 
+   let friendsNameList: string[] = ["hridoy hossain", "Ismail Hossain" , "Redowan Shawon"]; 
+```
+____
