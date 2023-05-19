@@ -50,12 +50,40 @@ const a:string = "Mostafizur Rahaman";
 console.log(a); 
 
 ```
-- ##### Then Run  the command to convert typescript to javaScript
-```typescript
- tsc index.ts
- ```
+- ##### Then Run  the command to convert typescript to javaScript `tsc index.ts `
 - ##### linked index.js with index.html for watching output. 
 ```html 
    <script src="index.js"></script> 
-   ```
+```
 - ##### Now If you write anything on TypeScript File , Tsc compiler gives us an vanila JavaScript file. 
+
+
+## Actuall Project Setup:-
+- ##### create two folder name src and dist
+- ##### src folder contains all ts files and dist folder contains all js files. 
+- ##### Create TypeScript Configs with command :- 
+
+```typescript 
+   tsc --init 
+```
+- ##### After running the command we can see an `tsconfig.json` file
+- ##### open `tsconfig.json` and edit properties values like below: 
+```json 
+{
+   "rootDir": "/src",   /* Specify the root folder within your source files. */
+   "OutDir" : "/dist",        /* Specify an output folder for all emitted files. */
+}
+
+```
+- ##### Create a file ` index.ts ` on src folder and below codes : 
+```typescript
+   const myName:string = "Mostafizur Rahaman" 
+   console.log(myName); 
+```
+- ##### To Compile this code run `tsc ` command on terminal: 
+- ##### After compile we can see index.js folder on dist folder. 
+- ##### output: 
+```typescript
+   var myName = "Mostafizur Rahaman"; 
+   console.log(myName); 
+```
