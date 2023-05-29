@@ -385,3 +385,31 @@ name = "rahaman";
 
   
    ```
+- ### There are two types of union array . Example : 
+ - - #### Union Type (Single Type) : Only allow one spefic types data. At the same time we can use only one type of data set. we can not store multiple type of data at the same time. 
+ ```ts
+   let myList : string[] | number[] | boolean[]; 
+
+   // Valid Values : 
+
+   myList = ['mostafiz', 'ratul']; 
+   myList = [false , true]; 
+   myList = [2,3,34];
+
+   
+   //  Invalid Values 
+   myList = ['mostafiz', 2, false] // gives error 
+   myList = [false, 4] // gives error  
+ ```
+ - - ####  Union Type (multiple Type): Multiple Type data allows on our variable. 
+   - ##### syntax :-
+   ```ts
+      let anyData : (string | number | boolean | null | undefined); 
+
+      anyData = [false, 2, 'name of ', null, undefined]; 
+      anyData.push(""); 
+      anyData.push(4); 
+      anyData.push(null); 
+      anyData.push(undefined); 
+         
+   ```
