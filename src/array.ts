@@ -62,3 +62,24 @@ happyDayList.unshift(false);
 // happyDayList.includes('true'); 
 // happyDayList.unshift(null); 
 
+
+
+//  Union Type in Array(single type data stored)  : 
+
+let myList : string[] | number[] | boolean[]; 
+
+
+myList = ['mostafizur', 'ratul']; // valid 
+myList = [false, false] ; // valid 
+myList = [2,3,4] // valid 
+
+// myList = ['mostafizur', false, 1]; // inValid 
+
+
+
+//  Union Type in Array(multiple type data stored)  : 
+
+let myDatas : (string | number | boolean | null | undefined)[] ; 
+
+myDatas = ['mostafizur', 'ratul', 2, false, true, null, undefined, null , ' any thing']; 
+
