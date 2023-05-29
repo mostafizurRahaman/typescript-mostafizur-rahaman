@@ -218,10 +218,4 @@ user = undefined; // because type is number;
 
 ---
 
-```typescript
-const user = {
-   name: "Hridoy hossain",
-   email: "hridoyhossain@gmail.com",
-   phone: "01304015167",
-};
-```
+
