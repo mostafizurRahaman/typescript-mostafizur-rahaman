@@ -313,8 +313,39 @@ name = "rahaman";
    //  Invalid Values :
    myFriends = [1, 3, 5, 4]; //error
    myFriends.push(2); //error
-   myFriends.pop(2); //error
-   myFriends.shift(null); //error
+   myFriends.shift(); //error
    myFriends.unshift(false); //error
    myFriends.push(undefined);
+   ```
+-  ### <font style="color:#f06; text-transform: capitalize "> number [ ] or number's array: </font> The array only allows and contains number type data.
+   -  ##### Type Declaration:
+
+   ```ts
+    let ourRoll : number[]; 
+   ```
+
+   -  ##### allow only numbers;
+
+   ```ts
+   let ourRoll : number[] ; 
+
+   // Valid Values : 
+
+   ourRoll = [1,2,3,4,5]; 
+
+   ourRoll.push(2); 
+   ourRoll.includes(8); 
+
+   ourRoll.map((num: number, idx:number)=> num + 1 )
+
+
+   // inValid Values : 
+   ourRoll.push('2'); // error
+   ourRoll.includes('five');
+
+   ourRoll.includes(false); // error; 
+   ourRoll = ['2', 'five'] // error 
+   ourRoll = [false, true] // error 
+
+  
    ```
