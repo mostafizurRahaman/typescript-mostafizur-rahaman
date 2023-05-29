@@ -405,7 +405,7 @@ name = "rahaman";
    - ##### syntax :-
    ```ts
       let anyData : (string | number | boolean | null | undefined); 
-      
+
       //valid Value: 
       anyData = [false, 2, 'name of ', null, undefined]; 
       anyData.push(""); 
@@ -414,3 +414,33 @@ name = "rahaman";
       anyData.push(undefined); 
          
    ```
+### Tuple Type : 
+- ##### Tuple is an array with fixed list. 
+- ##### Every index of the array have fixed data type 
+- ##### Tuples in Typescript : 
+```ts 
+   let myStore : [string, number, boolean]; 
+   //  or 
+   let myStore1 : [boolean, number, boolean]; 
+   // or 
+   let myStore3 : [string, number, number, null undefined]; 
+
+   //  Valid Values : 
+   myStore = ['any string', 2, false]; 
+   myStore = ['my name', 2, true]; 
+
+   // InValid Values : 
+   myStore = [false, 'my name', false]; // error 
+
+
+
+   // Valid Values : 
+   myStore1 = [false, 2, true]; 
+   myStore1 = [true, 7, true]; 
+
+
+   // InValid Values : 
+   myStore2 = [" ", false, 5]; 
+
+```
+`
