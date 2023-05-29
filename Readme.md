@@ -203,17 +203,18 @@ a = undefined;
 
 //  shows Errors:
 a = "undefined"; // because "undefined" is string ;
-a= {name: "mostafizur rahaman", roll: 4}; 
-a= 48; 
-a = ["ratul", "hasan", "hridoy", "redowan"]; 
-a= null; 
-a = false
+a = { name: "mostafizur rahaman", roll: 4 };
+a = 48;
+a = ["ratul", "hasan", "hridoy", "redowan"];
+a = null;
+a = false;
 ```
-#### Null  Type : Only allows null value. 
+
+#### Null Type : Only allows null value.
+
 ```typescript
 let user: null;
 user = null; // correct value;
-
 
 // Shows error for:
 user = "Ratul Hossain"; // because type is string
@@ -222,60 +223,98 @@ user = 20; // because  type is number
 user = undefined; // because type is number;
 ```
 
-## <font style="color:#FF014F;text-transform:uppercase; " >Union Type</font> : 
-- #### we can use union type when a variable contains double or multiple type data. 
-- #### we can seperate types by using  ( | ) or (union) or operator 
+## <font style="color:#FF014F;text-transform:uppercase; " >Union Type</font> :
 
-- ##### Example 1: A variable contains age. That contain number and string type data. To define this variable type use can use union type. Type Script gives error when we try to store boolean, null , undefined and array or object to the variable. 
+-  #### we can use union type when a variable contains double or multiple type data.
+-  #### we can seperate types by using ( | ) or (union) or operator
+
+-  ##### Example 1: A variable contains age. That contain number and string type data. To define this variable type use can use union type. Type Script gives error when we try to store boolean, null , undefined and array or object to the variable.
 
 ```ts
-let age = number | string; 
+let age = number | string;
 
-//  Correct Values : 
-age = 20; 
-age = 21; 
-age = "tweenty"; 
-age = "ten"; 
+//  Correct Values :
+age = 20;
+age = 21;
+age = "tweenty";
+age = "ten";
 
-
-//   Shows errors for values:- 
-age = []; 
-age = false; 
-age = {age: 20}; 
-age = undefined; 
-age = null; 
-
+//   Shows errors for values:-
+age = [];
+age = false;
+age = { age: 20 };
+age = undefined;
+age = null;
 ```
 
-- ##### Example 2: A variable thats contains string or age or number type. 
+-  ##### Example 2: A variable thats contains string or age or number type.
 
-```ts 
-let isHave : string | boolean | number; 
+```ts
+let isHave: string | boolean | number;
 
-//  correct Values: 
-isHave = "true"; 
-isHave = 0; 
-isHave = 1; 
-isHave = 2; 
-isHave = false; 
-isHave = true; 
+//  correct Values:
+isHave = "true";
+isHave = 0;
+isHave = 1;
+isHave = 2;
+isHave = false;
+isHave = true;
 
-
-// other types like array, object, undefined and null gives errors: 
-isHave = []; 
+// other types like array, object, undefined and null gives errors:
+isHave = [];
 isHave = {};
 ```
 
-- ##### Example 3: If we want to store only two values on our variable. we can use values as types. 
+-  ##### Example 3: If we want to store only two values on our variable. we can use values as types.
 
-```ts 
-let name : 'saiful' | "sakib"; 
-// the variable only allows saiful and sakib . Typescript gives errors for other values. 
-name = "saiful"; // correct 
-name = "sakib"; //corrct 
+```ts
+let name: "saiful" | "sakib";
+// the variable only allows saiful and sakib . Typescript gives errors for other values.
+name = "saiful"; // correct
+name = "sakib"; //corrct
 
-// shows errors:- 
-name = "mostafizur Rahaman"; 
-name = "rahaman"; 
-
+// shows errors:-
+name = "mostafizur Rahaman";
+name = "rahaman";
 ```
+
+## <font style="color:#FF014F; text-transform: uppercase ">Array Type:</font>
+
+-  #### Typescript has a specific syntax for typing array
+-  #### There many types of array like: string[], number[], boolean[], (string | number | boolean)[], string[] | number[] | boolean[], [string, number, boolean, string] or tuples
+
+-  ### <font style="color:#f06; text-transform: capitalize "> String [ ] or string's array: </font>The array only allows and contains string type datas.
+
+   -  ##### Type Declaration:
+
+   ```ts
+   let myFriends: string[];
+   ```
+
+   -  ##### allow only strings;
+
+   ```ts
+   let myFriends: string[];
+
+   // we can store only string into string[];
+
+   myFriends = ["messi", "ronaldo"];
+
+   myFriends.push("nymear");
+
+   myFrineds.unshift("rahat");
+   ```
+
+   -  #### can't allow others type data like boolean, null , undefined,number or object.
+
+   ```ts
+   let myFriends: string[];
+
+   //  Invalid Values :
+   myFriends = [1, 3, 5, 4]; //error
+   myFriends.push(2); //error
+   myFriends.pop(2); //error
+   myFriends.shift(null); //error
+   myFriends.unshift(false); //error
+   myFriends.push(undefined);
+   ```
