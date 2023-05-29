@@ -209,7 +209,7 @@ a = ["ratul", "hasan", "hridoy", "redowan"];
 a= null; 
 a = false
 ```
-#### Null  Type 
+#### Null  Type : Only allows null value. 
 ```typescript
 let user: null;
 user = null; // correct value;
@@ -222,6 +222,60 @@ user = 20; // because  type is number
 user = undefined; // because type is number;
 ```
 
----
+## <font style="color:#FF014F;text-transform:uppercase; " >Union Type</font> : 
+- #### we can use union type when a variable contains double or multiple type data. 
+- #### we can seperate types by using  ( | ) or (union) or operator 
+
+- ##### Example 1: A variable contains age. That contain number and string type data. To define this variable type use can use union type. Type Script gives error when we try to store boolean, null , undefined and array or object to the variable. 
+
+```ts
+let age = number | string; 
+
+//  Correct Values : 
+age = 20; 
+age = 21; 
+age = "tweenty"; 
+age = "ten"; 
 
 
+//   Shows errors for values:- 
+age = []; 
+age = false; 
+age = {age: 20}; 
+age = undefined; 
+age = null; 
+
+```
+
+- ##### Example 2: A variable thats contains string or age or number type. 
+
+```ts 
+let isHave : string | boolean | number; 
+
+//  correct Values: 
+isHave = "true"; 
+isHave = 0; 
+isHave = 1; 
+isHave = 2; 
+isHave = false; 
+isHave = true; 
+
+
+// other types like array, object, undefined and null gives errors: 
+isHave = []; 
+isHave = {};
+```
+
+- ##### Example 3: If we want to store only two values on our variable. we can use values as types. 
+
+```ts 
+let name : 'saiful' | "sakib"; 
+// the variable only allows saiful and sakib . Typescript gives errors for other values. 
+name = "saiful"; // correct 
+name = "sakib"; //corrct 
+
+// shows errors:- 
+name = "mostafizur Rahaman"; 
+name = "rahaman"; 
+
+```
