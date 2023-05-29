@@ -203,11 +203,17 @@ a = undefined;
 
 //  shows Errors:
 a = "undefined"; // because "undefined" is string ;
+a= {name: "mostafizur rahaman", roll: 4}; 
+a= 48; 
+a = ["ratul", "hasan", "hridoy", "redowan"]; 
+a= null; 
+a = false
 ```
-
+#### Null  Type 
 ```typescript
 let user: null;
 user = null; // correct value;
+
 
 // Shows error for:
 user = "Ratul Hossain"; // because type is string
