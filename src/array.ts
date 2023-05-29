@@ -30,8 +30,35 @@ ourRoll.map((num: number, idx:number)=> num + 1 )
 
 // // inValid Values : 
 // ourRoll.push('2'); // error
-// ourRoll.includes('five');
+// ourRoll.includes('five');// error; 
 
 // ourRoll.includes(false); // error; 
 // ourRoll = ['2', 'five'] // error 
 // ourRoll = [false, true] // error 
+
+
+
+//  boolean[] : only allows boolean types data. other data are not allowed: 
+let happyDayList : boolean[]; 
+
+//  Valid Values : 
+happyDayList = [false, true, false ,true]; 
+happyDayList = [true, true , true, true]; 
+happyDayList = [false, false , false, false]; 
+
+happyDayList.push(false); 
+happyDayList.push(true); 
+happyDayList.includes(true); 
+happyDayList.unshift(false); 
+
+
+//  Invalid Values : 
+
+happyDayList = ['false', 'true']; 
+happyDayList = [null, undefined]; 
+happyDayList = [2, 23]; 
+
+happyDayList.push(2); 
+happyDayList.includes('true'); 
+happyDayList.unshift(null); 
+

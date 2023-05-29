@@ -349,3 +349,39 @@ name = "rahaman";
 
   
    ```
+-  ### <font style="color:#f06; text-transform: capitalize "> boolean [ ] or boolean's array: </font> The array only allows and contains boolean type data means (true and false).
+   -  ##### Type Declaration:
+
+   ```ts
+      let happyDayList : boolean[]; 
+   ```
+
+   -  ##### allow only numbers;
+
+   ```ts
+   //  boolean[] : only allows boolean types data. other data are not allowed: 
+   let happyDayList : boolean[];    
+
+   //  Valid Values : 
+   happyDayList = [false, true, false ,true]; 
+   happyDayList = [true, true , true, true]; 
+   happyDayList = [false, false , false, false]; 
+
+   happyDayList.push(false); 
+   happyDayList.push(true); 
+   happyDayList.includes(true); 
+   happyDayList.unshift(false); 
+
+
+   //  Invalid Values : 
+
+   happyDayList = ['false', 'true']; 
+   happyDayList = [null, undefined]; 
+   happyDayList = [2, 23]; 
+
+   happyDayList.push(2); 
+   happyDayList.includes('true'); 
+   happyDayList.unshift(null); 
+
+  
+   ```
